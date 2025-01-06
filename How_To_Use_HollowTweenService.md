@@ -1,6 +1,6 @@
 # How To Use HollowTweenService
  A scripting tutorial for Kopykat's scripting API. 
-
+ 
 # Introduction
  This tutorial will teach you how Kopykat's `HollowTweenService` library works, and why we use it.
 
@@ -40,7 +40,7 @@ local HollowTweenService = require(script.Parent.HollowTweenService)
 ```
 
 Great! The library can now be used. We can create a new HollowTween using the function `HollowTweenService:create()`. This function takes three parameters:
-<br></br>
+<br>
 > **DOCUMENTATION** 
 
 | Parameter      | Data Type | Description |  
@@ -50,7 +50,7 @@ tweenInfo | `TweenInfo` | The TweenInfo that will be used in the actual Tween.
 propertyTable | `dictionary` | The Instance properties that will change with the Tween.
 delay | `number?` | An optional property that defines a scriptable delay.
 
-<br></br>
+<br>
 
 So, given this information, we know that at the bare minimum, our `HollowTween` needs a `TweenInfo` object and a `PropertyTable` object. Let's do just that!
 
@@ -68,7 +68,7 @@ local propertyTable = {Size=Vector3.new(2, 2, 2)}
 -- Now we can finally create the new HollowTween.
 local myHollowTween = HollowTweenService:create(nil, tweenInfo, propertyTable)
 ```
-<br></br>
+<br>
 Okay, we have a `HollowTween`, but how do we play it? We can play this `HollowTween` by converting it to a normal `Tween` using `HollowTweenService:toTween()`.
 
 This function takes two parameters:
@@ -80,7 +80,7 @@ This function takes two parameters:
 rootInstance | `Instance` | The instance that the `HollowTweenType` will eventually be changing.
 baseHollowTween | `HollowTweenType` | The `HollowTweenType` that will be used to define the new Tween.
 
-<br></br>
+<br>
 Based on this function definition, we know we'll need to input an instance, and we'll need to input a target instance, and a `HollowTweenType`.
 Let's say we want to play the `HollowTweenType` with the Baseplate as the target instance. We can do that like so:
 
@@ -134,12 +134,13 @@ Wonderful! The baseplate will now resize to a hundreth of its original size. Thi
 
 | Operator      | Description |  
 | ------------- | ------------- | 
-| `+` | Adds the operand onto the original value. |
-| `-` | Subtracts the operand from the original value. |
-| `/` | Divides the operand by the original value. |
-| `*` | Multiplies the operand by the original value. |
-#
-<br></br>
+ `+` | Adds the operand onto the original value. 
+ `-` | Subtracts the operand from the original value. 
+ `/` | Divides the operand by the original value. 
+ `*` | Multiplies the operand by the original value. 
+
+<br>
+
 #### Section C.1.
  # How to smoothly reset a Tween.
 
@@ -151,8 +152,9 @@ Wonderful! The baseplate will now resize to a hundreth of its original size. Thi
  If we were to play a HollowTween using this property table, it would reset the instance back to its original state.
 
 > <span style="color : ORANGE"> **WARNING** <span>  <span style="color : LightGray"> A property table that resets a `Tween` **must** be converted to a `Tween` before the instance is altered, else it **will not work**. <span>  
-#
-<br></br>
+
+<br>
+
 #### Section D.1.
  # Accessing child and parent instances in a Tween
 
@@ -199,8 +201,9 @@ local newTween = HollowTweenService:toTween(workspace, myHollowTween)
 
 > <span style="color : ORANGE"> **WARNING** <span>  <span style="color : LightGray"> Attempting to access a parent or child instance that **doesn't exist** will result in an **error**. <span>  
 
-#
-<br></br>
+
+<br>
+
 > **WAIT** Why is this feature necessary? Why wouldn't I access the child or parent directly? 
 
  There are certain cases when this is simply not possible. A great example is `GuiActionService`. The point of `GuiActionService` is to let us define animations for GUI once, and never again. These animations are intended to target several different instances at once.
