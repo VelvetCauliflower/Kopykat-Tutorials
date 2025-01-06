@@ -100,7 +100,9 @@ newTween:play()
 With that, the baseplate will shrink into a 2x2x2 cube in 10 seconds. Congratulations, you made your first `HollowTweenType`, and then applied it!
 
 #### Section B.1.
+
  # Using arithmetic inside a HollowTween
+ 
  > **WAIT** How can I write to the values of a `Tween` using a `HollowTweenType`?
 
  It was previously mentioned that you could write to HollowTweens. You could do this manually, but HollowTweens come with several features to automatically write this information.
@@ -142,6 +144,7 @@ Wonderful! The baseplate will now resize to a hundreth of its original size. Thi
 <br>
 
 #### Section C.1.
+
  # How to smoothly reset a Tween.
 
  As a special feature of HollowTweenService, we can undo all changes made with `Tween`s. We can do this by setting the property we want to reset in the properties table to `"?"`. Here's an example property table that does this:
@@ -156,6 +159,7 @@ Wonderful! The baseplate will now resize to a hundreth of its original size. Thi
 <br>
 
 #### Section D.1.
+
  # Accessing child and parent instances in a Tween
 
 You may remember that the first parameter of the `HollowTweenService:create()` command 
