@@ -1,7 +1,6 @@
 # How To Add New GUI Animations To Kopykat
  A scripting tutorial for editing Kopykat.
-
-
+ 
 # Prerequisites
 Read `How_To_Use_GuiActionService.md` for more information on GuiActionService.
 
@@ -10,7 +9,7 @@ GUI animations are loaded into the GUI automatically in Kopykat. These are loade
 
 By adding new `GuiActionService.GuiEventDeclarationType` objects to this ModuleScript, you can automatically add new GUI animations to Kopykat. 
 
-<br/><br/>
+<br>
 
 # What You'll Learn
 
@@ -20,12 +19,14 @@ By adding new `GuiActionService.GuiEventDeclarationType` objects to this ModuleS
 
 - Recommended practice for sorting the GUI animations.
 
-<br/><br/>
+<br>
+
 #### Section A.1
+
 # Where the GUI animations are stored.
 GUI animations are stored in `Client.storage.gui_animations.GuiAnimations`. This Module script returns a dictionary that defines every GUI animation in the game as a `GuiActionService.GuiEventDeclarationType`. 
 
-<br></br>
+<br>
 
 #### Section A.1
 # The General Format
@@ -45,8 +46,10 @@ local GuiAnimations : {GuiActionService.GuiEventDeclarationType} = {
 
 Therefore, if we wanted to make a button use the `defaultButton` subclass, we would set the button's `GuiSubclassName` attribute to `defaultButton`.
 
-<br></br>
+<br>
+
 #### Section B.2
+
 # Sorting Files
 When creating a new `GuiActionService.GuiEventDeclarationType`, it's recommended that you create a new ModuleScript inside `Client.storage.gui_animations.generic` to define it. This reduces clutter, and ensures that the new code is easy to find.
 
