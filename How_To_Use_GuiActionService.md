@@ -1,8 +1,5 @@
 # How To Use GuiActionService
  A scripting tutorial for Kopykat's scripting API. 
- 
- Written by <a href=https://www.roblox.com/users/90328669/profile>@PixelHix.</a>
-
 
 
 # Prerequisites
