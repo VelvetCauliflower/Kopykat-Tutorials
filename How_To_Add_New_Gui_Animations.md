@@ -1,13 +1,14 @@
 # How To Add New GUI Animations To Kopykat
- A scripting tutorial for Kopykat's scripting API. 
- 
- Written by <a href=https://www.roblox.com/users/90328669/profile>@PixelHix.</a>
+ A scripting tutorial for editing Kopykat.
+
 
 # Prerequisites
 Read `How_To_Use_GuiActionService.md` for more information on GuiActionService.
 
 # Introduction
 GUI animations are loaded into the GUI automatically in Kopykat. These are loaded from a `ModuleScript` named GuiAnimations.
+
+By adding new `GuiActionService.GuiEventDeclarationType` objects to this ModuleScript, you can automatically add new GUI animations to Kopykat. 
 
 <br/><br/>
 
@@ -31,7 +32,7 @@ GUI animations are stored in `Client.storage.gui_animations.GuiAnimations`. This
 The index of each GUI animation is its subclass name. 
 To better explain this, here is the current GuiAnimations file:
 ```lua
-local GuiAnimations : {{GuiActionService.GuiEventDeclarationType}} = {
+local GuiAnimations : {GuiActionService.GuiEventDeclarationType} = {
 
 	defaultButton = require(Events.defaultButton),
 
