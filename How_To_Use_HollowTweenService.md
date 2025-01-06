@@ -1,7 +1,5 @@
 # How To Use HollowTweenService
  A scripting tutorial for Kopykat's scripting API. 
- 
- Written by <a href=https://www.roblox.com/users/90328669/profile>@PixelHix.</a>
 
 # Introduction
  This tutorial will teach you how Kopykat's `HollowTweenService` library works, and why we use it.
