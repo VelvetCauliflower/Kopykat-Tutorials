@@ -135,6 +135,7 @@ Before we move on, here is a list of all supported event names.
 <br>
 
 #### Section B.1.
+
 # Conditional Formatting
 
 There's one extra feature of GuiActionService. We can detect when a specific property has changed, and even detect whether that property is equal to another value!
