@@ -4,7 +4,7 @@
 # Introduction
  This tutorial will teach you how Kopykat's `HollowTweenService` library works, and why we use it.
 
-<br/><br/>
+<br>
 
 # What You'll Learn
 
@@ -14,7 +14,7 @@
 
 - Resetting Tweens smoothly with `HollowTweenType`.
 
-<br/><br/>
+<br>
 #### Section A.1
  # Creating Tweens with HollowTweenService
 > **WAIT** First things first, why are we using HollowTweenService instead of TweenService?
@@ -27,7 +27,7 @@ In Roblox, the `Tween` instance is read-only. This means we can't change it afte
 
 Got that? Don't worry, it's simpler than it sound!
 
-<br/><br/>
+<br>
 #### Section A.2.
 > **WAIT** How do I make a HollowTweenType in a `script`?
 
@@ -102,7 +102,7 @@ With that, the baseplate will shrink into a 2x2x2 cube in 10 seconds. Congratula
 #### Section B.1.
 
  # Using arithmetic inside a HollowTween
- 
+
  > **WAIT** How can I write to the values of a `Tween` using a `HollowTweenType`?
 
  It was previously mentioned that you could write to HollowTweens. You could do this manually, but HollowTweens come with several features to automatically write this information.
