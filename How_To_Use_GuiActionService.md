@@ -4,7 +4,7 @@
 
 
 # Prerequisites
-This tutorial requires `HollowTweenService`.
+You will need to have read about `HollowTweenService` prior to starting this tutorial.
 
 
 # Introduction
