@@ -2,14 +2,15 @@
  A scripting tutorial for Kopykat's scripting API. 
 
 
+
 # Prerequisites
-This tutorial requires HollowTweenService.
+This tutorial requires `HollowTweenService`.
 
 
 # Introduction
  This tutorial will teach you how to add new GUI animations using `HollowTweenService` and `GuiActionService`. These libraries have been created to simplify the creation of Tweens for many instances.
 
-<br/><br/>
+<br>
 
 # What You'll Learn
 
@@ -17,7 +18,7 @@ This tutorial requires HollowTweenService.
 
 - Using conditional formatting with a `SubclassEventType`.
 
-<br></br>
+<br>
 #### Section A.1.
 # Creating our first GUI subclass.
 
@@ -131,7 +132,8 @@ Before we move on, here is a list of all supported event names.
 `PropertyChangedSignal` | Fires when a property defined in the `GuiEventDeclarationType`'s `eventData` has changed.
 
 
-<br></br>
+<br>
+
 #### Section B.1.
 # Conditional Formatting
 
@@ -141,7 +143,7 @@ To do this, we first need to set the `eventName` of the `GuiEventDeclarationType
 
 Then, we must setup the `eventData` of the same `GuiEventDeclarationType`.
 
-<br></br>
+<br>
 
 > **WAIT** How do I define event data?
 
@@ -155,7 +157,7 @@ name | `string` | The name of the property you will be detecting.
 value | `any?` or `{any}?` | An optional value or table of values to compare to the Instance's property value. If `eventData.value` is defined, then the event will only fire if the target Instance's property equals any value in `eventData.value`. If this value is set to `nil`, then the value will be ignored, and then the event will fire everytime the property changes. 
 inverted | boolean? | An optional option. If set to `true`, the value comparison will change. Instead, the event will only fire if all values of `eventData.value` **do not** equal the Instance's property value.
 
-<br></br>
+<br>
 Given this table, we now know that we can play Tweens during property changes.
 
 > **NOTE** By using the `inverted` property, we can safely undo changes made using the `PropertyChangedSignal` event. If the Instance's property value no longer equals any of the written values, then we can Tween it back to normal by setting properties to `"?"` in our `HollowTweenTypes`.
