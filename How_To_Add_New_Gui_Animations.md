@@ -4,7 +4,7 @@
  
 # Prerequisites
 
-Read `How_To_Use_GuiActionService.md` for more information on GuiActionService.
+You will need to read about `GuiActionService` prior to starting this tutorial.
 
 # Introduction
 
